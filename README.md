@@ -9,7 +9,16 @@ The following Regex is for matching an email:
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-## Quantifiers
+
+## Table of Content
+
+* [Character Group 1](#character_group_1)
+* [@ Character](#@_character)
+* [Character Group 2](#character_Group_2)
+* [Character Group 3](#chacter_group_3)
+* [Ending Character](#ending_character)
+
+### Quantifiers
 
 These quantifiers simply specift a number of groups, and are expressed using "*", "+", "?" and "{}"
 
@@ -21,16 +30,8 @@ in our example, the email uses a "+" quantifier, which in order to match, the em
 Grouping breaks down the expression into sub espressions. Parentheses () are used to capture groups. Each group of the RegEx must meet the parameters seperately in order to be a match.
 
 
-## Table of Content
 
-* [Character Group 1](##_Character_Group_1)
-* [@ Character](##_@_Character)
-* [Character Group 2](##_Character_Group_2)
-* [Character Group 3](##_Chacter_Group_3)
-* [Ending Character](##_Ending_Character)
-
-
-## Character Group 1
+### Character Group 1
 
 ([a-z0-9_\.-]+)
 
@@ -38,11 +39,11 @@ This first charcter set for the Email, it looks for any letter characters in the
 
 The "+" at the end merges the first character group and the second character group. (Quantifier)
 
-## @ Character
+### @ Character
 
 This simply looks for a "@" charcter within the email
 
-## Character Group 2
+### Character Group 2
 
 ([\da-z\.-]+)
 
@@ -50,7 +51,7 @@ This character group firstly uses "\d" to match and digit characters between 0-9
 
 The "+" at the end merges the first character group and the second character group. (Quantifier)
 
-## Character Group 3
+### Character Group 3
 
 ([a-z\.]{2,6})
 
@@ -58,7 +59,7 @@ This is the third and final character group the begins with an "a" to "z" charac
 
 The "{2,6}" is another quantifier that matched the preceeding tokens
 
-## Ending Character
+### Ending Character
 
 The "$" character macthes the end of the string to finalize the email inputed.
 
